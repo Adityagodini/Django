@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        h1{
+            text-align: center;
+            color:brown;
+            font-size: 32px;
+        }
+        form{
+            color:black;
+            padding: 23px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Form</h1>
+    <form action="" method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+        <button>Submit</button>
+    </form>
+</body>
+</html>

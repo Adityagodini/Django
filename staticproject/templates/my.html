@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <center>
+    <h1>I.. am {{name}}</h1>
+    <div>
+        <h2>Fav Animal:{{animal}}</h2>
+        <a href="https://en.wikipedia.org/wiki/Salaar:_Part_1_%E2%80%93_Ceasefire">click</a>
+        <img src="{% static 'image/dinosaur.webp' %}" alt="">
+    </div>
+    <div>
+        <h2>Fav place:{{place}}</h2>
+        <a href="https://en.wikipedia.org/wiki/Salaar:_Part_1_%E2%80%93_Ceasefire">click</a>
+        <img src="{% static 'image/khansar.webp' %}" alt="">
+    </div>
+    <div>
+        <h2>Fav Movie:{{movie}}</h2>
+        <a href="https://en.wikipedia.org/wiki/Salaar:_Part_1_%E2%80%93_Ceasefire">click</a>
+        <img src="{% static 'image/place.webp' %}" alt="">
+    </div>
+    <div>
+        <h2>Fav Food:{{food}}</h2>
+        <a href="https://en.wikipedia.org/wiki/Salaar:_Part_1_%E2%80%93_Ceasefire">click</a>
+        <img src="{% static 'image/biriyani.webp' %}" alt="">
+    </div>
+    <div>
+    
+    </center>
+</body>
+</html>

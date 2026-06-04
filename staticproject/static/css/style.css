@@ -1,0 +1,32 @@
+h1{
+    color:rgb(103, 74, 74);
+    font-size: 50px;
+}
+
+h2{
+    color:blue;
+    /* font-size: 20px; */
+}
+
+img{
+    width: 350px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+div{
+    border: 2px solid rgb(109, 120, 114);
+    margin: 10px;
+
+    justify-content: space-between;
+    display: flex;
+    flex-direction:row;
+    padding: 10px;
+}
+
+a{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
