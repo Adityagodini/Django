@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 32px;
+            background-color: black;
+            color: bisque;
+            text-align: center;
+            padding: 12px;
+        }
+       table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        h1{
+            text-align:center;
+            color:rgb(42, 156, 218);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Fake Employee Details</h1>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Dob</th>
+            <th>Place</th>
+            <th>Email</th>
+            <th>Salary</th>
+            <th>Job</th>
+        </tr>
+
+        {% for i in emp %}
+        <tr>
+            <td>{{i.name}} </td>
+            <td>{{i.dob}} </td>
+            <td>{{i.place}} </td>
+            <td>{{i.email}} </td>
+            <td>{{i.salary}} </td>
+            <td>{{i.job}} </td>
+        </tr>
+
+        {% endfor %}
+    </table>
+</body>
+</html>
