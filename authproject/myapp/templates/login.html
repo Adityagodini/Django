@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            background-image:url(/Web/images/salaar_wallpaper.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.5px;
+
+        } */
+          h1{
+            text-align: center;
+        }
+        form{
+            width: 400px;
+            margin: auto;
+            background-color:rgba(46, 175, 210, 0.61);
+            padding: 20px;
+            border: 1px solid rgb(207, 38, 38);
+            border-radius: 16px;
+            background-size:439px 290px;
+            background-repeat: no-repeat;
+            font-size: 19px;
+            color: white;
+        }
+        
+         input[type="text"],
+         input[type="email"],
+         input[type="tel"],
+        input[type="password"],
+        input[type="date"]{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 2px solid #270b0b;
+            border-radius: 36px;
+        }
+            input[type="button"]{
+                width: 100%;
+                padding: 10px;
+                background-color: blue;
+                color: white;
+                border: none;
+                cursor: pointer;
+                margin: 5PX 0px;
+            }
+            input[type="button"]:hover{
+                background-color: darkblue;
+            }
+            p,a{
+            text-align: center;
+            color: white;
+            font-weight: bold;
+           }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form  method = "Post">
+        {% csrf_token %}
+        Email: <input type="text" name="username" id="" placeholder="Enter your email">
+        <br>
+        Password: <input type="password" name="password" id="" placeholder="Enter your password"> <br>
+        <button type="submit">Login</button> 
+        <p>Don't have an account <a href="{% url 'register' %}">SignUp</a></p>
+</body>
+</html>
