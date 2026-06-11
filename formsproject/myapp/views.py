@@ -16,7 +16,7 @@ def formview(request):
             d={"name":name,"age":age,"email":email,"place":place}
             return render(request,'output.html',d)
     d={'form':f}
-    return render (request,'form.html',d)
+    return render (request,'form.html',d )
 
             
    
