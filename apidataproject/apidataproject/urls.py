@@ -1,5 +1,5 @@
 """
-URL configuration for CBVproject project.
+URL configuration for apidataproject project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.0/topics/http/urls/
@@ -16,13 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from myapp.views import StudentList, StudentDetails, StudentUpdate, StudentDelete, StudentCreate
+from myapp.views import studentDetails
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('students/',StudentList.as_view(), name = "students"),
-    path('<int:pk>/',StudentDetails.as_view(),name = "details"),
-    path('update/<int:pk>/',StudentUpdate.as_view(), name = "Update"),
-    path('delete/<int:pk>/',StudentDelete.as_view(), name = "delete"),
-    path('create/',StudentCreate.as_view(), name = 'create')
+    path('api/<int:id>/',studentDetails.as_view())
 ]

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView, UpdateView, DeleteView, CreateView
 from myapp.models import Student
 from django.urls import reverse_lazy
 # Create your views here.
@@ -28,3 +28,11 @@ class StudentDelete(DeleteView):
    
     # default templates: student_confirm_delete.html
     # default context : student
+
+
+class StudentCreate(CreateView):
+    model = Student
+    fields = "__all__"
+
+    # default templates : student_form.html
+    # default 
